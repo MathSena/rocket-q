@@ -1,5 +1,4 @@
 * {
-  /* Configurações iniciais */
   margin: 0;
   padding: 0;
   border: none;
@@ -8,7 +7,6 @@
 }
 
 html {
-  /* Variáveis */
   --black: #0d114f;
   --white: #fafafa;
   --red: #e83f5b;
@@ -27,7 +25,8 @@ html {
 }
 
 body {
-  height: 100vh; /* A medida vh (View Height) é igual a 1/100 da altura da viewport. */
+  display: flex;
+  height: 100vh;
   background: var(--background);
 }
 
@@ -35,10 +34,11 @@ body,
 button,
 input,
 textarea {
-  /* Intervalo de tamanho */
-  font-size: clamp(14px, 1.6rem, 2vh);
+  /* intervalo de tamanho */
+  font-size: clamp(14px, 1.6rem, 2vw);
+
   font-family: "Open Sans", sans-serif;
-  /*font-family: "Poppins", sans-serif;*/
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 .content {
@@ -58,6 +58,7 @@ textarea {
   border-width: 0;
 }
 
+/*--------- input and buttons*/
 input,
 button,
 .button {
